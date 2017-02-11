@@ -1,0 +1,38 @@
+{
+  "name": "Tris",
+  "version": "1.0.0",
+  "author": "Stefano Cappa",
+  "description": "Tris client",
+  "license": "Apache-v2",
+  "main": "bin/www",
+  "homepage": "https://www.stefanocappa.it",
+  "private": true,
+  "repository": "https://github.com/Ks89/tris-game",
+  "engines": {
+    "node": ">=7.0.0",
+    "npm": ">=4.0.0"
+  },
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "devDependencies": {
+    "angular": "^1.6.2",
+    "angular-mocks": "^1.6.2",
+    "angular-route": "^1.6.2",
+    "angular-sanitize": "^1.6.2",
+    "angular-ui-bootstrap": "^2.5.0",
+    "jasmine-core": "^2.4.1",
+    "jquery": "^3.1.1",
+    "jshint": "^2.9.2",
+    "karma": "^1.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-junit-reporter": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-requirejs": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.7",
+    "protractor": "^3.3.0",
+    "underscore": "^1.8.3"
+  }
+}

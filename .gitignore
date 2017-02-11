@@ -1,0 +1,18 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+node_modules
+
+~/
+.DS_Store
+.idea
+
+client/public
+
+docs

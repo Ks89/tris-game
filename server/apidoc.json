@@ -1,0 +1,15 @@
+{
+  "name": "Tris",
+  "version": "1.0.0",
+  "description": "Official documentation",
+  "title": "Tris",
+  "url" : "https://github.com/Ks89/tris-game",
+  "header": {
+    "title": "Tris",
+    "filename": "apidoc.header.md"
+  },
+  "footer": {
+    "title": "by Stefano Cappa",
+    "filename": "apidoc.footer.md"
+  }
+}

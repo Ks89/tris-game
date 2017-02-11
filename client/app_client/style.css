@@ -1,0 +1,28 @@
+body {
+  text-align: center
+}
+
+.cell {
+  padding: 0
+}
+
+.grid {
+  margin: auto
+}
+
+.btn.btn-default {
+  font-family: Courier;
+  border-radius: 0;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 80px;
+  padding: 50px 75px
+}
+
+.white {
+  color: #fff
+}
+
+.win {
+  color: #006400
+}

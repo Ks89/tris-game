@@ -1,0 +1,38 @@
+<div ng-controller="homeCtrl">
+  <br>
+  <page-header content="vm.pageHeader"></page-header>
+  <br>
+  <table class="grid">
+    <tbody>
+    <tr>
+      <td ng-repeat="cell in vm.board[0]" class="cell">
+        <button class="btn btn-default btn-lg" ng-class="cell.color" ng-click="vm.move(cell, 0, $index);">
+          {{cell.value}}
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td ng-repeat="cell in vm.board[1]" class="cell">
+        <button class="btn btn-default btn-lg" ng-class="cell.color" ng-click="vm.move(cell, 1, $index);">
+          {{cell.value}}
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td ng-repeat="cell in vm.board[2]" class="cell">
+        <button class="btn btn-default btn-lg" ng-class="cell.color" ng-click="vm.move(cell, 2, $index);">
+          {{cell.value}}
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <p>
+    <span ng-hide="vm.winner">Sta giocando: {{ vm.currentPlayer }}</span>
+    <span ng-show="vm.winner">Giocatore {{ vm.currentPlayer }} ha vinto!</span>
+  </p>
+
+  <button ng-click="vm.reset();" class="btn btn-primary btn-large">Nuovo gioco</button>
+</div>
