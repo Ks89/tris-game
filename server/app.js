@@ -78,6 +78,7 @@ let routesApi = require('./src/routes/index')(express);
 app.use('/api', routesApi);
 // --------------------------------------------------------------------------------------
 
+
 console.log("Initializing static path for index.html");
 
 app.use('/', function(req, res) {

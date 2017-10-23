@@ -15,12 +15,34 @@ app.set('port', port);
  */
 var server = http.createServer(app);
 
+
 /**
  * Listen on provided port, on all network interfaces.
  */
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
+
+
+let io = require('socket.io')(server);
+io.on('connect', handleIO);
+function handleIO(socket) {
+  console.log('client connected');
+  let interval = setInterval(() => {
+    console.log('Saying hello!');
+    socket.emit('message', Math.random());
+  }, 1000);
+  socket.on('new-message', msg => {
+    console.log('received a new message: ' + msg);
+    socket.emit('message', msg);
+  });
+  socket.on('disconnect', () => {
+    console.log('client disconnected');
+    clearInterval(interval);
+  });
+}
+
+
 
 /**
  * Normalize a port into a number, string, or false.

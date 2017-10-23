@@ -17,6 +17,18 @@
 
     vm.board = initBoard();
 
+
+
+    var socket = io('http://localhost:3000');
+    socket.on('connect', function() {
+      console.log('connect');
+    });
+    socket.on('message', function(data) {
+      console.log('New message received: ' + data);
+    });
+
+
+
     vm.reset = function () {
       $log.log("reset called");
 
